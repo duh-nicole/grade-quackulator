@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-export default function GradeQuackulator() {
 // We use useState to keep an array of assignment objects in memory.
 // This completely replaces manual HTML string generation (container.innerHTML).
 // When this array changes, React automatically intercepts the change and re-renders the list.
@@ -243,4 +242,5 @@ export default function GradeQuackulator() {
       </main>
     </div>
   );
-}
+
+
