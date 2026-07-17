@@ -1,15 +1,15 @@
 # 🦆 Grade Quackulator (v2.0)
 
-A highly responsive, terminal-themed grade calculation dashboard built with React. This application is designed to help students track weighted assignment grades and calculate the specific benchmarks needed to hit their target grade goals.
+A highly responsive grade calculation dashboard developed with React on PyCharm. This application is designed to help students track weighted assignment grades and calculate the specific benchmarks needed to hit their target grade goals.
 
 ---
 
 ## ⚡ Architectural Decision: Pure Client-Side Execution
 
-This project was intentionally designed and refactored as a **pure client-side application** utilizing **React's state management** rather than relying on external database server round-trips. 
+This project was purposely designed and refactored to become a **pure client-side application** by using **state management** provided by React without any extra requests to the database server. 
 
 ### Why this architecture?
-* **Instantaneous Updates (0ms Latency):** By executing calculations directly in the user's browser, there are zero server lag delays. The DOM re-renders in real-time as the user types.
+* **Instantaneous Updates (0ms Latency):** Calculations are done right there in the user's browser means DOM updates are done immediately upon user input. 
 * **Privacy & Security by Design:** No user grade data is ever transmitted over the network or stored on an external database. 100% of the mathematical calculations happen locally within the client session.
 * **Zero Infrastructure Overhead:** Eliminating the requirement for a backend API layer means the application has zero hosting costs, high uptime, and can be instantly deployed to static hosting platforms like GitHub Pages.
 
@@ -18,18 +18,18 @@ This project was intentionally designed and refactored as a **pure client-side a
 ## 🛠️ Tech Stack & Key Concepts Used
 
 * **Frontend Framework:** React (Functional Components)
-* **Styling:** Custom Tailwind CSS (Retro Terminal Aesthetic)
-* **State Management (`useState`):** Leverages declarative state to manage dynamic arrays of assignment objects securely.
-* **Effect Hook (`useEffect`):** Automatically triggers mathematical calculation engines the instant any input fields are modified, eliminating the need for manual "Submit" triggers.
-* **Virtual DOM Rendering:** Uses dynamic array mapping (`.map()`) and list diffing to update only changed nodes in the browser's DOM, optimizing client rendering performance.
+* **Styling:** Custom Tailwind CSS (Cozy Retro Cybercafe Theme)
+* **State Management (`useState`):** Uses declarative state for managing arrays of dynamically changing assignment objects safely.
+* **Effect Hook (`useEffect`):** Automatically runs the math calculation engines when any input is changed without having to click a 'Submit' button.
+* **Virtual DOM Rendering:** Utilizes (`.map()`) of dynamic arrays for efficiently updating only the changed DOM nodes in the browser. 
 
 ---
 
 ## 🎨 Key Features
 
-1. **Dynamic Weighted Grade Tracker:** Add or remove unlimited assignments dynamically. The weighted average adjusts instantly using deep state copying.
-2. **Dynamic Target Goal Engine:** Input a goal grade, a future assignment's possible points, and its overall weight to instantly calculate exactly what you need to score.
-3. **Responsive UI Window:** Built using a pixel-perfect, retro-inspired OS terminal container that automatically scales cleanly across high-resolution desktops and handheld mobile devices.
+1. **Dynamic Weighted Grade Tracker:** Assign or delete your assignments from anywhere in an unlimited capacity. Automatically updated weighted grade using deep state copy. 
+2. **Dynamic Target Goal Engine:** Enter your goal grade, the number of possible points for the next assignment, and the total weight to automatically get your needed score.
+3. **Responsive UI Window:** Developed using a retro-inspired, pixel-perfect browser window which scales perfectly on high resolution desktops and mobile devices.
 
 ---
 
